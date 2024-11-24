@@ -1,0 +1,112 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ff4081; /* Change to a different color on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 80px; /* To ensure space for the fixed navbar */
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.page-content {
+  background-color: #ffffffcc; /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  transform: translateY(20px);
+}
+
+.page-content:hover {
+  transform: translateY(0);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button styles */
+button {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
